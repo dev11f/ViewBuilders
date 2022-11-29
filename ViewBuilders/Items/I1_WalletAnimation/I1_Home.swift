@@ -40,6 +40,7 @@ struct I1_Home: View {
                 Text("My Cards")
                 Image(systemName: "chevron.right")
             }
+            .foregroundColor(.white)
             .font(.system(size: 19))
             .fontWeight(.semibold)
             .contentShape(Rectangle())
@@ -54,7 +55,6 @@ struct I1_Home: View {
             Color.white
                 .ignoresSafeArea()
         }
-        .preferredColorScheme(.dark)
     }
     
     // MARK: Animating Wallet Page

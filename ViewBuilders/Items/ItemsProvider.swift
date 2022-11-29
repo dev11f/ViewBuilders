@@ -19,7 +19,7 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 2, title: "Custom Date Picker", view: AnyView(I2_Home())),
         .init(id: 1, title: "Wallet Animation", view: AnyView(I1_Home()))
-    
     ]
 }

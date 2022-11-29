@@ -18,6 +18,10 @@
 		F62D527B2935C69000C608A4 /* I1_README.md in Resources */ = {isa = PBXBuildFile; fileRef = F62D527A2935C69000C608A4 /* I1_README.md */; };
 		F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D527C2935D54C00C608A4 /* ItemsProvider.swift */; };
 		F62D527F2935DED700C608A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D527E2935DED700C608A4 /* ContentView.swift */; };
+		F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52812935E8D700C608A4 /* I2_Home.swift */; };
+		F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52832935E93600C608A4 /* I2_CurrentDatePicker.swift */; };
+		F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52862935EE4700C608A4 /* I2_DateValue.swift */; };
+		F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52882935F28F00C608A4 /* I2_Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		F62D527A2935C69000C608A4 /* I1_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I1_README.md; sourceTree = "<group>"; };
 		F62D527C2935D54C00C608A4 /* ItemsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsProvider.swift; sourceTree = "<group>"; };
 		F62D527E2935DED700C608A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F62D52812935E8D700C608A4 /* I2_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2_Home.swift; sourceTree = "<group>"; };
+		F62D52832935E93600C608A4 /* I2_CurrentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2_CurrentDatePicker.swift; sourceTree = "<group>"; };
+		F62D52862935EE4700C608A4 /* I2_DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2_DateValue.swift; sourceTree = "<group>"; };
+		F62D52882935F28F00C608A4 /* I2_Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I2_Task.swift; sourceTree = "<group>"; };
+		F62D528A2935FD7600C608A4 /* I2_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I2_README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F62D52802935E85400C608A4 /* I2_CustomDatePicker */,
 				F62D52752935AF0600C608A4 /* I1_WalletAnimation */,
 			);
 			path = Items;
@@ -153,6 +163,26 @@
 				F62D52782935B21900C608A4 /* I1_RollingText.swift */,
 			);
 			path = I1_WalletAnimation;
+			sourceTree = "<group>";
+		};
+		F62D52802935E85400C608A4 /* I2_CustomDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F62D528A2935FD7600C608A4 /* I2_README.md */,
+				F62D52852935EE3E00C608A4 /* Model */,
+				F62D52812935E8D700C608A4 /* I2_Home.swift */,
+				F62D52832935E93600C608A4 /* I2_CurrentDatePicker.swift */,
+			);
+			path = I2_CustomDatePicker;
+			sourceTree = "<group>";
+		};
+		F62D52852935EE3E00C608A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F62D52862935EE4700C608A4 /* I2_DateValue.swift */,
+				F62D52882935F28F00C608A4 /* I2_Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F62D52792935B21900C608A4 /* I1_RollingText.swift in Sources */,
+				F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */,
+				F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */,
+				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
+				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */,
 				F62D524B2935ACAA00C608A4 /* ViewBuildersApp.swift in Sources */,
 			);

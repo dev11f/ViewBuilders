@@ -10,7 +10,17 @@ import SwiftUI
 struct ItemData: Identifiable {
     let id: Int
     let title: String
+    let desc: String
+    let createdDate: String
     let view: AnyView
+    
+    init(id: Int, title: String, desc: String, createdDate: String, view: some View) {
+        self.id = id
+        self.title = title
+        self.desc = desc
+        self.createdDate = createdDate
+        self.view = AnyView(view)
+    }
 }
 
 final class ItemsProvider {
@@ -19,8 +29,25 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
-        .init(id: 3, title: "Magnifying Glass", view: AnyView(I3_Home())),
-        .init(id: 2, title: "Custom Date Picker", view: AnyView(I2_Home())),
-        .init(id: 1, title: "Wallet Animation", view: AnyView(I1_Home()))
+        .init(id: 4,
+              title: "AR Lock Screen",
+              desc: "iOS 16 잠금화면 효과",
+              createdDate: "2022-11-30",
+              view: I4_Home()),
+        .init(id: 3,
+              title: "Magnifying Glass",
+              desc: "돋보기 효과",
+              createdDate: "2022-11-30",
+              view: I3_Home()),
+        .init(id: 2,
+              title: "Custom Date Picker",
+              desc: "커스텀 캘린더",
+              createdDate: "2022-11-29",
+              view: I2_Home()),
+        .init(id: 1,
+              title: "Wallet Animation",
+              desc: "다양한 애니메이션 효과",
+              createdDate: "2022-11-29",
+              view: I1_Home())
     ]
 }

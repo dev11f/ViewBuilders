@@ -18,16 +18,43 @@ struct ContentView: View {
                     item.view
                         .toolbar(.hidden)
                 } label: {
-                    Text("\(item.id). " + item.title)
+                    ItemRowView(item: item)
                 }
             }
+            .listStyle(.plain)
             .background(Color(.systemGroupedBackground))
             .scrollContentBackground(.hidden)
             .navigationTitle("View Builders")
             
         }
     }
+}
+
+struct ItemRowView: View {
+    let item: ItemData
     
+    var body: some View {
+        HStack {
+            Text("\(item.id)")
+                .frame(width: 40, height: 40)
+                .background {
+                    RoundedRectangle(cornerRadius: 13, style: .continuous)
+                        .fill(Color(.systemGroupedBackground))
+                }
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text(item.title)
+                
+                Text(item.desc)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                Text(item.createdDate)
+                    .font(.caption2)
+                    .foregroundColor(.gray)
+            }
+            .padding(.horizontal)
+        }
+    }
 }
 
 // https://stackoverflow.com/a/68650943/8293462

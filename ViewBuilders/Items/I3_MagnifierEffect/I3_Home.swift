@@ -9,7 +9,7 @@ import SwiftUI
 
 struct I3_Home: View {
     // MARK: Magnification Properties
-    @State private var scale: CGFloat = 0
+    @State private var scale: CGFloat = 0.2
     @State private var rotation: CGFloat = 0
     @State private var size: CGFloat = 0
     @State private var hideGlass: Bool = false

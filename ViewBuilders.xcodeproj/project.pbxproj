@@ -24,6 +24,9 @@
 		F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52882935F28F00C608A4 /* I2_Task.swift */; };
 		F62D528D29371D2300C608A4 /* I3_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D528C29371D2300C608A4 /* I3_Home.swift */; };
 		F62D5291293747A700C608A4 /* I4_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D5290293747A700C608A4 /* I4_Home.swift */; };
+		F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D5295293DB88B00C608A4 /* I5_Album.swift */; };
+		F62D5298293DB94100C608A4 /* I5_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D5297293DB94100C608A4 /* I5_Home.swift */; };
+		F62D529A293DB9F100C608A4 /* I5_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D5299293DB9F100C608A4 /* I5_ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,10 @@
 		F62D528E2937279600C608A4 /* I3_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I3_README.md; sourceTree = "<group>"; };
 		F62D5290293747A700C608A4 /* I4_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I4_Home.swift; sourceTree = "<group>"; };
 		F62D529229374A3300C608A4 /* I4_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I4_README.md; sourceTree = "<group>"; };
+		F62D5295293DB88B00C608A4 /* I5_Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I5_Album.swift; sourceTree = "<group>"; };
+		F62D5297293DB94100C608A4 /* I5_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I5_Home.swift; sourceTree = "<group>"; };
+		F62D5299293DB9F100C608A4 /* I5_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I5_ContentView.swift; sourceTree = "<group>"; };
+		F62D529B293DC91800C608A4 /* I5_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I5_README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F62D5293293DB6A600C608A4 /* I5_StickyHeader */,
 				F62D528F2937479500C608A4 /* I4_ARLockScreen */,
 				F62D528B29371CAF00C608A4 /* I3_MagnifierEffect */,
 				F62D52802935E85400C608A4 /* I2_CustomDatePicker */,
@@ -205,10 +213,29 @@
 		F62D528F2937479500C608A4 /* I4_ARLockScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F62D5290293747A700C608A4 /* I4_Home.swift */,
 				F62D529229374A3300C608A4 /* I4_README.md */,
+				F62D5290293747A700C608A4 /* I4_Home.swift */,
 			);
 			path = I4_ARLockScreen;
+			sourceTree = "<group>";
+		};
+		F62D5293293DB6A600C608A4 /* I5_StickyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F62D529B293DC91800C608A4 /* I5_README.md */,
+				F62D5294293DB87900C608A4 /* Model */,
+				F62D5299293DB9F100C608A4 /* I5_ContentView.swift */,
+				F62D5297293DB94100C608A4 /* I5_Home.swift */,
+			);
+			path = I5_StickyHeader;
+			sourceTree = "<group>";
+		};
+		F62D5294293DB87900C608A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F62D5295293DB88B00C608A4 /* I5_Album.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,12 +369,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62D529A293DB9F100C608A4 /* I5_ContentView.swift in Sources */,
+				F62D5298293DB94100C608A4 /* I5_Home.swift in Sources */,
 				F62D52792935B21900C608A4 /* I1_RollingText.swift in Sources */,
 				F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */,
 				F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */,
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
+				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
 				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D5291293747A700C608A4 /* I4_Home.swift in Sources */,
 				F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */,

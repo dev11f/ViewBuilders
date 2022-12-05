@@ -17,6 +17,9 @@ struct ContentView: View {
                 NavigationLink {
                     item.view
                         .toolbar(.hidden)
+                        .onAppear {
+                            vibrate()
+                        }
                 } label: {
                     ItemRowView(item: item)
                 }
@@ -27,6 +30,12 @@ struct ContentView: View {
             .navigationTitle("View Builders")
             
         }
+    }
+    
+    private func vibrate() {
+        let feedback = UIImpactFeedbackGenerator(style: .soft)
+        feedback.prepare()
+        feedback.impactOccurred()
     }
 }
 

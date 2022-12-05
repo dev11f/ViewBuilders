@@ -29,6 +29,11 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 5,
+              title: "Animatable Sticky Header",
+              desc: "스티키 헤더 효과",
+              createdDate: "2022-12-05",
+              view: I5_ContentView()),
         .init(id: 4,
               title: "AR Lock Screen",
               desc: "iOS 16 잠금화면 효과",

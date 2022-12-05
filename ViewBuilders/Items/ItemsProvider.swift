@@ -29,6 +29,11 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 6,
+              title: "Animated Line Graph",
+              desc: "애니메이션 그래프",
+              createdDate: "2022-12-05",
+              view: I6_Home()),
         .init(id: 5,
               title: "Animatable Sticky Header",
               desc: "스티키 헤더 효과",

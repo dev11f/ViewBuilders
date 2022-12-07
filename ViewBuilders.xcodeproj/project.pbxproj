@@ -33,6 +33,8 @@
 		F62D52A6293E382E00C608A4 /* I6_AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D52A5293E382E00C608A4 /* I6_AppViewModel.swift */; };
 		F62D52A9293E3B2600C608A4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F62D52A8293E3B2600C608A4 /* SDWebImageSwiftUI */; };
 		F62D876F2940692200F6018E /* I7_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D876E2940692200F6018E /* I7_Home.swift */; };
+		F62D87742940821000F6018E /* I8_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D87732940821000F6018E /* I8_Home.swift */; };
+		F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8776294082F800F6018E /* matrix code nfi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,10 @@
 		F62D52AA293E41C600C608A4 /* I6_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I6_README.md; sourceTree = "<group>"; };
 		F62D876E2940692200F6018E /* I7_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I7_Home.swift; sourceTree = "<group>"; };
 		F62D87702940797B00F6018E /* I7_REAME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I7_REAME.md; sourceTree = "<group>"; };
+		F62D87722940820700F6018E /* I8_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I8_README.md; sourceTree = "<group>"; };
+		F62D87732940821000F6018E /* I8_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I8_Home.swift; sourceTree = "<group>"; };
+		F62D8776294082F800F6018E /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
+		F62D87782940831A00F6018E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 		F62D52492935ACAA00C608A4 /* ViewBuilders */ = {
 			isa = PBXGroup;
 			children = (
+				F62D87782940831A00F6018E /* Info.plist */,
 				F62D524A2935ACAA00C608A4 /* ViewBuildersApp.swift */,
 				F62D527E2935DED700C608A4 /* ContentView.swift */,
 				F62D52742935AE0700C608A4 /* Items */,
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F62D8771294081F300F6018E /* I8_MatrixRainEffect */,
 				F62D876D294067B700F6018E /* I7_GlassCardEffect */,
 				F62D529C293E25CF00C608A4 /* I6_AnimatedLineGraph */,
 				F62D5293293DB6A600C608A4 /* I5_StickyHeader */,
@@ -285,10 +293,28 @@
 		F62D876D294067B700F6018E /* I7_GlassCardEffect */ = {
 			isa = PBXGroup;
 			children = (
-				F62D876E2940692200F6018E /* I7_Home.swift */,
 				F62D87702940797B00F6018E /* I7_REAME.md */,
+				F62D876E2940692200F6018E /* I7_Home.swift */,
 			);
 			path = I7_GlassCardEffect;
+			sourceTree = "<group>";
+		};
+		F62D8771294081F300F6018E /* I8_MatrixRainEffect */ = {
+			isa = PBXGroup;
+			children = (
+				F62D87722940820700F6018E /* I8_README.md */,
+				F62D877929408A7E00F6018E /* Font */,
+				F62D87732940821000F6018E /* I8_Home.swift */,
+			);
+			path = I8_MatrixRainEffect;
+			sourceTree = "<group>";
+		};
+		F62D877929408A7E00F6018E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F62D8776294082F800F6018E /* matrix code nfi.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */,
 				F62D52522935ACAB00C608A4 /* Preview Assets.xcassets in Resources */,
 				F62D524F2935ACAB00C608A4 /* Assets.xcassets in Resources */,
 				F62D527B2935C69000C608A4 /* I1_README.md in Resources */,
@@ -437,6 +464,7 @@
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
+				F62D87742940821000F6018E /* I8_Home.swift in Sources */,
 				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
 				F62D529F293E278900C608A4 /* I6_Home.swift in Sources */,
 				F62D52A6293E382E00C608A4 /* I6_AppViewModel.swift in Sources */,
@@ -608,6 +636,7 @@
 				DEVELOPMENT_TEAM = 94K2K33P88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViewBuilders/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -638,6 +667,7 @@
 				DEVELOPMENT_TEAM = 94K2K33P88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViewBuilders/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

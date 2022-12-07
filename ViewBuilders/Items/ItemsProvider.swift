@@ -29,6 +29,11 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 8,
+              title: "Matrix Rain Effect",
+              desc: "매트릭스 Rain 효과",
+              createdDate: "2022-12-07",
+              view: I8_Home()),
         .init(id: 7,
               title: "Glass Card Effect",
               desc: "Morphism 효과",

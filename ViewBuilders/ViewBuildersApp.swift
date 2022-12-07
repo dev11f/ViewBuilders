@@ -15,3 +15,22 @@ struct ViewBuildersApp: App {
         }
     }
 }
+
+struct Test_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        TestView()
+    }
+    
+    struct TestView: View {
+        
+        var body: some View {
+            Circle()
+                .fill(.blue)
+                .frame(width: 200, height: 300)
+                .frame(width: .infinity)
+                .border(.green)
+        }
+    }
+    
+}

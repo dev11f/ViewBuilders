@@ -29,6 +29,11 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 7,
+              title: "Glass Card Effect",
+              desc: "Morphism 효과",
+              createdDate: "2022-12-07",
+              view: I7_Home()),
         .init(id: 6,
               title: "Animated Line Graph",
               desc: "애니메이션 그래프",

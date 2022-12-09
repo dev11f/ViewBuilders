@@ -7,28 +7,17 @@
 
 import SwiftUI
 
-struct ItemData: Identifiable {
-    let id: Int
-    let title: String
-    let desc: String
-    let createdDate: String
-    let view: AnyView
-    
-    init(id: Int, title: String, desc: String, createdDate: String, view: some View) {
-        self.id = id
-        self.title = title
-        self.desc = desc
-        self.createdDate = createdDate
-        self.view = AnyView(view)
-    }
-}
-
 final class ItemsProvider {
     static let shared = ItemsProvider()
     
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 9,
+              title: "Tag View",
+              desc: "태그 뷰 구현",
+              createdDate: "2022-12-09",
+              view: I9_Home()),
         .init(id: 8,
               title: "Matrix Rain Effect",
               desc: "매트릭스 Rain 효과",
@@ -70,4 +59,20 @@ final class ItemsProvider {
               createdDate: "2022-11-29",
               view: I1_Home())
     ]
+}
+
+struct ItemData: Identifiable {
+    let id: Int
+    let title: String
+    let desc: String
+    let createdDate: String
+    let view: AnyView
+    
+    init(id: Int, title: String, desc: String, createdDate: String, view: some View) {
+        self.id = id
+        self.title = title
+        self.desc = desc
+        self.createdDate = createdDate
+        self.view = AnyView(view)
+    }
 }

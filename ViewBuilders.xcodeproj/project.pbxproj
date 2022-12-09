@@ -35,6 +35,9 @@
 		F62D876F2940692200F6018E /* I7_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D876E2940692200F6018E /* I7_Home.swift */; };
 		F62D87742940821000F6018E /* I8_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D87732940821000F6018E /* I8_Home.swift */; };
 		F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8776294082F800F6018E /* matrix code nfi.ttf */; };
+		F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A22942F9F6007A0C3C /* I9_Home.swift */; };
+		F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */; };
+		F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A72942FC48007A0C3C /* I9_TagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,10 @@
 		F62D87732940821000F6018E /* I8_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I8_Home.swift; sourceTree = "<group>"; };
 		F62D8776294082F800F6018E /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
 		F62D87782940831A00F6018E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6DF98A22942F9F6007A0C3C /* I9_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Home.swift; sourceTree = "<group>"; };
+		F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Tag.swift; sourceTree = "<group>"; };
+		F6DF98A72942FC48007A0C3C /* I9_TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_TagView.swift; sourceTree = "<group>"; };
+		F6DF98A929430912007A0C3C /* I9_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I9_README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F6DF98A12942F96D007A0C3C /* I9_TagView */,
 				F62D8771294081F300F6018E /* I8_MatrixRainEffect */,
 				F62D876D294067B700F6018E /* I7_GlassCardEffect */,
 				F62D529C293E25CF00C608A4 /* I6_AnimatedLineGraph */,
@@ -315,6 +323,25 @@
 				F62D8776294082F800F6018E /* matrix code nfi.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		F6DF98A12942F96D007A0C3C /* I9_TagView */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF98A929430912007A0C3C /* I9_README.md */,
+				F6DF98A42942FBE4007A0C3C /* Model */,
+				F6DF98A22942F9F6007A0C3C /* I9_Home.swift */,
+				F6DF98A72942FC48007A0C3C /* I9_TagView.swift */,
+			);
+			path = I9_TagView;
+			sourceTree = "<group>";
+		};
+		F6DF98A42942FBE4007A0C3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,14 +483,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F62D529A293DB9F100C608A4 /* I5_ContentView.swift in Sources */,
+				F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */,
 				F62D5298293DB94100C608A4 /* I5_Home.swift in Sources */,
 				F62D52792935B21900C608A4 /* I1_RollingText.swift in Sources */,
+				F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */,
 				F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */,
 				F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */,
 				F62D52A1293E2B4800C608A4 /* I6_LineGraph.swift in Sources */,
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
+				F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */,
 				F62D87742940821000F6018E /* I8_Home.swift in Sources */,
 				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
 				F62D529F293E278900C608A4 /* I6_Home.swift in Sources */,

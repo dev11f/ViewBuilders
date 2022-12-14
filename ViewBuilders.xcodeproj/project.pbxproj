@@ -35,6 +35,7 @@
 		F62D876F2940692200F6018E /* I7_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D876E2940692200F6018E /* I7_Home.swift */; };
 		F62D87742940821000F6018E /* I8_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D87732940821000F6018E /* I8_Home.swift */; };
 		F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8776294082F800F6018E /* matrix code nfi.ttf */; };
+		F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62EB1B829499D9C00B21D98 /* I10_Home.swift */; };
 		F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A22942F9F6007A0C3C /* I9_Home.swift */; };
 		F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */; };
 		F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A72942FC48007A0C3C /* I9_TagView.swift */; };
@@ -96,6 +97,8 @@
 		F62D87732940821000F6018E /* I8_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I8_Home.swift; sourceTree = "<group>"; };
 		F62D8776294082F800F6018E /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
 		F62D87782940831A00F6018E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F62EB1B829499D9C00B21D98 /* I10_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I10_Home.swift; sourceTree = "<group>"; };
+		F67299C42949A0D600396457 /* I10_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I10_README.md; sourceTree = "<group>"; };
 		F6DF98A22942F9F6007A0C3C /* I9_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Home.swift; sourceTree = "<group>"; };
 		F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Tag.swift; sourceTree = "<group>"; };
 		F6DF98A72942FC48007A0C3C /* I9_TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_TagView.swift; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F62EB1B729499D8500B21D98 /* I10_BlurredSheet */,
 				F6DF98A12942F96D007A0C3C /* I9_TagView */,
 				F62D8771294081F300F6018E /* I8_MatrixRainEffect */,
 				F62D876D294067B700F6018E /* I7_GlassCardEffect */,
@@ -323,6 +327,15 @@
 				F62D8776294082F800F6018E /* matrix code nfi.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		F62EB1B729499D8500B21D98 /* I10_BlurredSheet */ = {
+			isa = PBXGroup;
+			children = (
+				F67299C42949A0D600396457 /* I10_README.md */,
+				F62EB1B829499D9C00B21D98 /* I10_Home.swift */,
+			);
+			path = I10_BlurredSheet;
 			sourceTree = "<group>";
 		};
 		F6DF98A12942F96D007A0C3C /* I9_TagView */ = {
@@ -501,6 +514,7 @@
 				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D876F2940692200F6018E /* I7_Home.swift in Sources */,
 				F62D5291293747A700C608A4 /* I4_Home.swift in Sources */,
+				F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */,
 				F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */,
 				F62D52A3293E36ED00C608A4 /* I6_CryptoModel.swift in Sources */,
 				F62D528D29371D2300C608A4 /* I3_Home.swift in Sources */,

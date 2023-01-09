@@ -22,7 +22,7 @@ fileprivate struct I4_ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
-        var config = ARFaceTrackingConfiguration()
+        let config = ARFaceTrackingConfiguration()
         config.frameSemantics.insert(.personSegmentation)
         arView.session.run(config)
         

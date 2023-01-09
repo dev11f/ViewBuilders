@@ -14,10 +14,12 @@ struct I10_Home: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             // MARK: Sample Map Region
-            let region = MKCoordinateRegion(center: .init(latitude: 25.2048, longitude: 55.2708),
+            let region = MKCoordinateRegion(center: .init(latitude: 37.496486063, longitude: 127.028361548),
                                             latitudinalMeters: 10000, longitudinalMeters: 10000)
             Map(coordinateRegion: .constant(region))
                 .ignoresSafeArea()
+                // 백스와이프를 위해서 disabled
+                .disabled(true)
             
             // MARK: Sheet Button
             Button {

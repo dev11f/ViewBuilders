@@ -13,6 +13,11 @@ final class ItemsProvider {
     private init() { }
     
     let items: [ItemData] = [
+        .init(id: 11,
+              title: "Task Management",
+              desc: "일정 관리 화면 UI 구현",
+              createdDate: "2023-01-14",
+              view: I11_Home()),
         .init(id: 10,
               title: "Blurred Sheet",
               desc: "커스텀 Blur Sheet 구현",

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F626A3FB2972EA6C00D539FE /* I11_Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626A3FA2972EA6C00D539FE /* I11_Task.swift */; };
+		F626A3FD2972F22600D539FE /* I11_AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626A3FC2972F22600D539FE /* I11_AddTaskView.swift */; };
 		F62D524B2935ACAA00C608A4 /* ViewBuildersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D524A2935ACAA00C608A4 /* ViewBuildersApp.swift */; };
 		F62D524F2935ACAB00C608A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62D524E2935ACAB00C608A4 /* Assets.xcassets */; };
 		F62D52522935ACAB00C608A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62D52512935ACAB00C608A4 /* Preview Assets.xcassets */; };
@@ -36,6 +38,12 @@
 		F62D87742940821000F6018E /* I8_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D87732940821000F6018E /* I8_Home.swift */; };
 		F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8776294082F800F6018E /* matrix code nfi.ttf */; };
 		F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62EB1B829499D9C00B21D98 /* I10_Home.swift */; };
+		F654CEC2296C6E4A00466223 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEBE296C6E4900466223 /* Ubuntu-Medium.ttf */; };
+		F654CEC3296C6E4A00466223 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEBF296C6E4900466223 /* Ubuntu-Bold.ttf */; };
+		F654CEC4296C6E4A00466223 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEC0296C6E4900466223 /* Ubuntu-Light.ttf */; };
+		F654CEC5296C6E4A00466223 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEC1296C6E4A00466223 /* Ubuntu-Regular.ttf */; };
+		F654CEC7296C6ECA00466223 /* I11_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F654CEC6296C6ECA00466223 /* I11_Home.swift */; };
+		F654CECA296C6F5400466223 /* I11_Ubuntu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F654CEC9296C6F5400466223 /* I11_Ubuntu.swift */; };
 		F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A22942F9F6007A0C3C /* I9_Home.swift */; };
 		F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */; };
 		F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A72942FC48007A0C3C /* I9_TagView.swift */; };
@@ -59,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F626A3FA2972EA6C00D539FE /* I11_Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_Task.swift; sourceTree = "<group>"; };
+		F626A3FC2972F22600D539FE /* I11_AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_AddTaskView.swift; sourceTree = "<group>"; };
+		F626A3FE297306B300D539FE /* I11_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I11_README.md; sourceTree = "<group>"; };
 		F62D52472935ACAA00C608A4 /* ViewBuilders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewBuilders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62D524A2935ACAA00C608A4 /* ViewBuildersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuildersApp.swift; sourceTree = "<group>"; };
 		F62D524E2935ACAB00C608A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +109,12 @@
 		F62D8776294082F800F6018E /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
 		F62D87782940831A00F6018E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F62EB1B829499D9C00B21D98 /* I10_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I10_Home.swift; sourceTree = "<group>"; };
+		F654CEBE296C6E4900466223 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		F654CEBF296C6E4900466223 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		F654CEC0296C6E4900466223 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		F654CEC1296C6E4A00466223 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		F654CEC6296C6ECA00466223 /* I11_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_Home.swift; sourceTree = "<group>"; };
+		F654CEC9296C6F5400466223 /* I11_Ubuntu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_Ubuntu.swift; sourceTree = "<group>"; };
 		F67299C42949A0D600396457 /* I10_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I10_README.md; sourceTree = "<group>"; };
 		F6DF98A22942F9F6007A0C3C /* I9_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Home.swift; sourceTree = "<group>"; };
 		F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Tag.swift; sourceTree = "<group>"; };
@@ -193,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F654CEBC296C6D2200466223 /* I11_TaskManagement */,
 				F62EB1B729499D8500B21D98 /* I10_BlurredSheet */,
 				F6DF98A12942F96D007A0C3C /* I9_TagView */,
 				F62D8771294081F300F6018E /* I8_MatrixRainEffect */,
@@ -338,6 +356,38 @@
 			path = I10_BlurredSheet;
 			sourceTree = "<group>";
 		};
+		F654CEBC296C6D2200466223 /* I11_TaskManagement */ = {
+			isa = PBXGroup;
+			children = (
+				F626A3FE297306B300D539FE /* I11_README.md */,
+				F654CEBD296C6E3300466223 /* Fonts */,
+				F654CEC8296C6F2E00466223 /* Model */,
+				F654CEC6296C6ECA00466223 /* I11_Home.swift */,
+				F626A3FC2972F22600D539FE /* I11_AddTaskView.swift */,
+			);
+			path = I11_TaskManagement;
+			sourceTree = "<group>";
+		};
+		F654CEBD296C6E3300466223 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F654CEBF296C6E4900466223 /* Ubuntu-Bold.ttf */,
+				F654CEC0296C6E4900466223 /* Ubuntu-Light.ttf */,
+				F654CEBE296C6E4900466223 /* Ubuntu-Medium.ttf */,
+				F654CEC1296C6E4A00466223 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F654CEC8296C6F2E00466223 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F654CEC9296C6F5400466223 /* I11_Ubuntu.swift */,
+				F626A3FA2972EA6C00D539FE /* I11_Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F6DF98A12942F96D007A0C3C /* I9_TagView */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,7 +517,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F654CEC5296C6E4A00466223 /* Ubuntu-Regular.ttf in Resources */,
 				F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */,
+				F654CEC2296C6E4A00466223 /* Ubuntu-Medium.ttf in Resources */,
+				F654CEC4296C6E4A00466223 /* Ubuntu-Light.ttf in Resources */,
+				F654CEC3296C6E4A00466223 /* Ubuntu-Bold.ttf in Resources */,
 				F62D52522935ACAB00C608A4 /* Preview Assets.xcassets in Resources */,
 				F62D524F2935ACAB00C608A4 /* Assets.xcassets in Resources */,
 				F62D527B2935C69000C608A4 /* I1_README.md in Resources */,
@@ -499,8 +553,10 @@
 				F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */,
 				F62D5298293DB94100C608A4 /* I5_Home.swift in Sources */,
 				F62D52792935B21900C608A4 /* I1_RollingText.swift in Sources */,
+				F654CECA296C6F5400466223 /* I11_Ubuntu.swift in Sources */,
 				F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */,
 				F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */,
+				F626A3FB2972EA6C00D539FE /* I11_Task.swift in Sources */,
 				F62D52892935F28F00C608A4 /* I2_Task.swift in Sources */,
 				F62D52A1293E2B4800C608A4 /* I6_LineGraph.swift in Sources */,
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
@@ -514,8 +570,10 @@
 				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D876F2940692200F6018E /* I7_Home.swift in Sources */,
 				F62D5291293747A700C608A4 /* I4_Home.swift in Sources */,
+				F626A3FD2972F22600D539FE /* I11_AddTaskView.swift in Sources */,
 				F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */,
 				F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */,
+				F654CEC7296C6ECA00466223 /* I11_Home.swift in Sources */,
 				F62D52A3293E36ED00C608A4 /* I6_CryptoModel.swift in Sources */,
 				F62D528D29371D2300C608A4 /* I3_Home.swift in Sources */,
 				F62D524B2935ACAA00C608A4 /* ViewBuildersApp.swift in Sources */,

@@ -38,15 +38,47 @@ enum I11_Category: String, CaseIterable {
 }
 
 /// - Sample Task
-var I11_sampleTasks: [I11_Task] = [
-    .init(dateAdded: Date(timeIntervalSince1970: 1673690749), taskName: "Edit YT Video", taskDescription: "", taskCategory: .general),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673690749), taskName: "Matched Geometry Effet(Issue)", taskDescription: "", taskCategory: .bug),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673694349), taskName: "Multi-ScrollView", taskDescription: "", taskCategory: .challenge),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673694409), taskName: "Loreal Ipsum", taskDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", taskCategory: .idea),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673714609), taskName: "Complete UI Animation Challenge", taskDescription: "", taskCategory: .challenge),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673851409), taskName: "Fix Shadow issue on Mockup's", taskDescription: "", taskCategory: .bug),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673791729), taskName: "Add Shadow Effect in Mockview App", taskDescription: "", taskCategory: .idea),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673791729), taskName: "Twitter/Instagram Post", taskDescription: "", taskCategory: .general),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673923409), taskName: "Lorem Ipsum", taskDescription: "", taskCategory: .modifiers)
-
+let I11_sampleTasks: [I11_Task] = [
+    .init(dateAdded: getSampleDate(dayOffset: -1, hourOffset: 0),
+          taskName: "Edit YT Video",
+          taskDescription: "",
+          taskCategory: .general),
+    .init(dateAdded: getSampleDate(dayOffset: -1, hourOffset: 0),
+          taskName: "Matched Geometry Effet(Issue)",
+          taskDescription: "",
+          taskCategory: .bug),
+    .init(dateAdded: getSampleDate(dayOffset: 0, hourOffset: 0),
+          taskName: "Multi-ScrollView",
+          taskDescription: "",
+          taskCategory: .challenge),
+    .init(dateAdded: getSampleDate(dayOffset: 0, hourOffset: 0),
+          taskName: "Loreal Ipsum",
+          taskDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+          taskCategory: .idea),
+    .init(dateAdded: getSampleDate(dayOffset: 0, hourOffset: 1),
+          taskName: "Complete UI Animation Challenge",
+          taskDescription: "",
+          taskCategory: .challenge),
+    .init(dateAdded: getSampleDate(dayOffset: 1, hourOffset: 1),
+          taskName: "Fix Shadow issue on Mockup's",
+          taskDescription: "",
+          taskCategory: .bug),
+    .init(dateAdded: getSampleDate(dayOffset: 1, hourOffset: 2),
+          taskName: "Add Shadow Effect in Mockview App",
+          taskDescription: "",
+          taskCategory: .idea),
+    .init(dateAdded: getSampleDate(dayOffset: 1, hourOffset: 2),
+          taskName: "Twitter/Instagram Post",
+          taskDescription: "",
+          taskCategory: .general),
+    .init(dateAdded: getSampleDate(dayOffset: 1, hourOffset: 4),
+          taskName: "Lorem Ipsum",
+          taskDescription: "",
+          taskCategory: .modifiers)
 ]
+
+fileprivate func getSampleDate(dayOffset: Int, hourOffset: Int) -> Date {
+    let dayDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: Date()) ?? Date()
+    let date = Calendar.current.date(byAdding: .hour, value: hourOffset, to: dayDate)
+    return date ?? Date()
+}

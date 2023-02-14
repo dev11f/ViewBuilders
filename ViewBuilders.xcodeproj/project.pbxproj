@@ -44,6 +44,7 @@
 		F654CEC5296C6E4A00466223 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEC1296C6E4A00466223 /* Ubuntu-Regular.ttf */; };
 		F654CEC7296C6ECA00466223 /* I11_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F654CEC6296C6ECA00466223 /* I11_Home.swift */; };
 		F654CECA296C6F5400466223 /* I11_Ubuntu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F654CEC9296C6F5400466223 /* I11_Ubuntu.swift */; };
+		F6BD3577299B6C9800A6237B /* I12_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD3576299B6C9800A6237B /* I12_Home.swift */; };
 		F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A22942F9F6007A0C3C /* I9_Home.swift */; };
 		F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */; };
 		F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A72942FC48007A0C3C /* I9_TagView.swift */; };
@@ -116,6 +117,8 @@
 		F654CEC6296C6ECA00466223 /* I11_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_Home.swift; sourceTree = "<group>"; };
 		F654CEC9296C6F5400466223 /* I11_Ubuntu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I11_Ubuntu.swift; sourceTree = "<group>"; };
 		F67299C42949A0D600396457 /* I10_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I10_README.md; sourceTree = "<group>"; };
+		F6BD3575299B6C7800A6237B /* I12_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I12_README.md; sourceTree = "<group>"; };
+		F6BD3576299B6C9800A6237B /* I12_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I12_Home.swift; sourceTree = "<group>"; };
 		F6DF98A22942F9F6007A0C3C /* I9_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Home.swift; sourceTree = "<group>"; };
 		F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Tag.swift; sourceTree = "<group>"; };
 		F6DF98A72942FC48007A0C3C /* I9_TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_TagView.swift; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F6BD3574299B6C6100A6237B /* I12_Popovers */,
 				F654CEBC296C6D2200466223 /* I11_TaskManagement */,
 				F62EB1B729499D8500B21D98 /* I10_BlurredSheet */,
 				F6DF98A12942F96D007A0C3C /* I9_TagView */,
@@ -388,6 +392,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F6BD3574299B6C6100A6237B /* I12_Popovers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD3575299B6C7800A6237B /* I12_README.md */,
+				F6BD3576299B6C9800A6237B /* I12_Home.swift */,
+			);
+			path = I12_Popovers;
+			sourceTree = "<group>";
+		};
 		F6DF98A12942F96D007A0C3C /* I9_TagView */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +577,7 @@
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
 				F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */,
 				F62D87742940821000F6018E /* I8_Home.swift in Sources */,
+				F6BD3577299B6C9800A6237B /* I12_Home.swift in Sources */,
 				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
 				F62D529F293E278900C608A4 /* I6_Home.swift in Sources */,
 				F62D52A6293E382E00C608A4 /* I6_AppViewModel.swift in Sources */,

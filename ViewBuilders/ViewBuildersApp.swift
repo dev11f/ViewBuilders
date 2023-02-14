@@ -9,28 +9,28 @@ import SwiftUI
 
 @main
 struct ViewBuildersApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
 
 struct Test_Previews: PreviewProvider {
+  
+  static var previews: some View {
+    TestView()
+  }
+  
+  struct TestView: View {
     
-    static var previews: some View {
-        TestView()
+    var body: some View {
+      Circle()
+        .fill(.blue)
+        .frame(width: 200, height: 300)
+        .frame(width: .infinity)
+        .border(.green)
     }
-    
-    struct TestView: View {
-        
-        var body: some View {
-            Circle()
-                .fill(.blue)
-                .frame(width: 200, height: 300)
-                .frame(width: .infinity)
-                .border(.green)
-        }
-    }
-    
+  }
+  
 }

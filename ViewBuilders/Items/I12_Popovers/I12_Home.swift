@@ -10,7 +10,7 @@ import SwiftUI
 struct I12_Home: View {
   @State private var showPopover: Bool = false
   @State private var updateText: Bool = false
-
+  
   var body: some View {
     Button("Show Popover") {
       showPopover.toggle()
@@ -47,7 +47,7 @@ struct I12_Home_Previews: PreviewProvider {
 /// 기본적으로 popover는 macOS와 iPadOS에만 있다.
 /// 그래서 iOS는 별도로 만들어줘야 한다.
 fileprivate extension View {
-
+  
   @ViewBuilder
   func iOSPopover<Content: View>(isPresented: Binding<Bool>, arrowDirection: UIPopoverArrowDirection, @ViewBuilder content: @escaping () -> Content) -> some View {
     self
@@ -55,7 +55,7 @@ fileprivate extension View {
         PopOverController(isPresented: isPresented, arrowDirection: arrowDirection, content: content())
       }
   }
-
+  
 }
 
 /// - Popover Helper
@@ -63,19 +63,19 @@ fileprivate struct PopOverController<Content: View>: UIViewControllerRepresentab
   @Binding var isPresented: Bool
   var arrowDirection: UIPopoverArrowDirection
   var content: Content
-
+  
   @State private var alreadyPresented: Bool = false
-
+  
   func makeCoordinator() -> Coordinator {
     return Coordinator(parent: self)
   }
-
+  
   func makeUIViewController(context: Context) -> UIViewController {
     let controller = UIViewController()
     controller.view.backgroundColor = .clear
     return controller
   }
-
+  
   func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     if alreadyPresented {
       // Updating SwiftUI View, when it's changed
@@ -85,7 +85,7 @@ fileprivate struct PopOverController<Content: View>: UIViewControllerRepresentab
         // Or You can define your own size in SwiftUI View
         hostingController.preferredContentSize = hostingController.view.intrinsicContentSize
       }
-
+      
       // Close View, if it's toggled Back
       if !isPresented {
         uiViewController.dismiss(animated: true) {
@@ -105,23 +105,23 @@ fileprivate struct PopOverController<Content: View>: UIViewControllerRepresentab
       }
     }
   }
-
+  
   // Forcing it to show Popover using PresentationDelegate
   class Coordinator: NSObject, UIPopoverPresentationControllerDelegate {
     var parent: PopOverController
-
+    
     init(parent: PopOverController) {
       self.parent = parent
     }
-
+    
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
       return .none
     }
-
+    
     func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
       parent.isPresented = false
     }
-
+    
     func presentationController(_ presentationController: UIPresentationController, willPresentWithAdaptiveStyle style: UIModalPresentationStyle, transitionCoordinator: UIViewControllerTransitionCoordinator?) {
       DispatchQueue.main.async {
         self.parent.alreadyPresented = true
@@ -133,7 +133,7 @@ fileprivate struct PopOverController<Content: View>: UIViewControllerRepresentab
 // Custom Hosting Controller for Wrapping to it's SwiftUI View Size
 // 이거 안하면 Popover 창이 엄청 크게 나옴
 class CustomHostingView<Content: View>: UIHostingController<Content> {
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     preferredContentSize = view.intrinsicContentSize

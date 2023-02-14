@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct I5_ContentView: View {
-    var body: some View {
-        GeometryReader {
-            let safeArea = $0.safeAreaInsets
-            let size = $0.size
-            I5_Home(safeArea: safeArea, size: size)
-                .ignoresSafeArea(.container, edges: .top)
-                .background(Color.black)
-        }
+  var body: some View {
+    GeometryReader {
+      let safeArea = $0.safeAreaInsets
+      let size = $0.size
+      I5_Home(safeArea: safeArea, size: size)
+        .ignoresSafeArea(.container, edges: .top)
+        .background(Color.black)
     }
+  }
 }
 
 struct I5_ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        I5_ContentView()
-    }
+  static var previews: some View {
+    I5_ContentView()
+  }
 }

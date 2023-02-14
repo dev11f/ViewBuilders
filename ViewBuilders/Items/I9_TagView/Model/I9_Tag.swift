@@ -8,7 +8,7 @@
 import Foundation
 
 struct I9_Tag: Identifiable, Hashable {
-    var id = UUID().uuidString
-    var text: String
-    var size: CGFloat = 0
+  var id = UUID().uuidString
+  var text: String
+  var size: CGFloat = 0
 }

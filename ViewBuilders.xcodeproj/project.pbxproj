@@ -38,6 +38,11 @@
 		F62D87742940821000F6018E /* I8_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D87732940821000F6018E /* I8_Home.swift */; };
 		F62D8777294082F800F6018E /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8776294082F800F6018E /* matrix code nfi.ttf */; };
 		F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62EB1B829499D9C00B21D98 /* I10_Home.swift */; };
+		F651F3472A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F651F3452A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld */; };
+		F651F34A2A3615FF00B6B3D3 /* I14_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651F3492A3615FF00B6B3D3 /* I14_Home.swift */; };
+		F651F34C2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651F34B2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift */; };
+		F651F36D2A3621B800B6B3D3 /* I14_Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651F36C2A3621B800B6B3D3 /* I14_Persistence.swift */; };
+		F651F36F2A36225E00B6B3D3 /* I14_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651F36E2A36225E00B6B3D3 /* I14_ContentView.swift */; };
 		F654CEC2296C6E4A00466223 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEBE296C6E4900466223 /* Ubuntu-Medium.ttf */; };
 		F654CEC3296C6E4A00466223 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEBF296C6E4900466223 /* Ubuntu-Bold.ttf */; };
 		F654CEC4296C6E4A00466223 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F654CEC0296C6E4900466223 /* Ubuntu-Light.ttf */; };
@@ -113,6 +118,12 @@
 		F62D8776294082F800F6018E /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
 		F62D87782940831A00F6018E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F62EB1B829499D9C00B21D98 /* I10_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I10_Home.swift; sourceTree = "<group>"; };
+		F651F3462A3615AF00B6B3D3 /* I14_Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = I14_Todo.xcdatamodel; sourceTree = "<group>"; };
+		F651F3492A3615FF00B6B3D3 /* I14_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I14_Home.swift; sourceTree = "<group>"; };
+		F651F34B2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I14_CustomFilteringDataView.swift; sourceTree = "<group>"; };
+		F651F36C2A3621B800B6B3D3 /* I14_Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I14_Persistence.swift; sourceTree = "<group>"; };
+		F651F36E2A36225E00B6B3D3 /* I14_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I14_ContentView.swift; sourceTree = "<group>"; };
+		F651F3702A362B5200B6B3D3 /* I14_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I14_README.md; sourceTree = "<group>"; };
 		F654CEBE296C6E4900466223 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		F654CEBF296C6E4900466223 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		F654CEC0296C6E4900466223 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
@@ -220,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F651F3442A3614B900B6B3D3 /* I14_TodoList */,
 				F6BBEE242A0F5FAE00A6A179 /* I13_HighlightView */,
 				F6BD3574299B6C6100A6237B /* I12_Popovers */,
 				F654CEBC296C6D2200466223 /* I11_TaskManagement */,
@@ -366,6 +378,27 @@
 				F62EB1B829499D9C00B21D98 /* I10_Home.swift */,
 			);
 			path = I10_BlurredSheet;
+			sourceTree = "<group>";
+		};
+		F651F3442A3614B900B6B3D3 /* I14_TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				F651F3702A362B5200B6B3D3 /* I14_README.md */,
+				F651F36C2A3621B800B6B3D3 /* I14_Persistence.swift */,
+				F651F3452A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld */,
+				F651F3482A3615F100B6B3D3 /* Views */,
+			);
+			path = I14_TodoList;
+			sourceTree = "<group>";
+		};
+		F651F3482A3615F100B6B3D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F651F36E2A36225E00B6B3D3 /* I14_ContentView.swift */,
+				F651F3492A3615FF00B6B3D3 /* I14_Home.swift */,
+				F651F34B2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F654CEBC296C6D2200466223 /* I11_TaskManagement */ = {
@@ -599,9 +632,11 @@
 			files = (
 				F62D529A293DB9F100C608A4 /* I5_ContentView.swift in Sources */,
 				F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */,
+				F651F36D2A3621B800B6B3D3 /* I14_Persistence.swift in Sources */,
 				F62D5298293DB94100C608A4 /* I5_Home.swift in Sources */,
 				F62D52792935B21900C608A4 /* I1_RollingText.swift in Sources */,
 				F654CECA296C6F5400466223 /* I11_Ubuntu.swift in Sources */,
+				F651F36F2A36225E00B6B3D3 /* I14_ContentView.swift in Sources */,
 				F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */,
 				F62D52842935E93600C608A4 /* I2_CurrentDatePicker.swift in Sources */,
 				F626A3FB2972EA6C00D539FE /* I11_Task.swift in Sources */,
@@ -609,15 +644,18 @@
 				F62D52A1293E2B4800C608A4 /* I6_LineGraph.swift in Sources */,
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
+				F651F3472A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
 				F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */,
 				F62D87742940821000F6018E /* I8_Home.swift in Sources */,
 				F6BBEE2A2A0F61D600A6A179 /* I13_Highlight.swift in Sources */,
 				F6BD3577299B6C9800A6237B /* I12_Home.swift in Sources */,
 				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
+				F651F34A2A3615FF00B6B3D3 /* I14_Home.swift in Sources */,
 				F62D529F293E278900C608A4 /* I6_Home.swift in Sources */,
 				F6BBEE282A0F5FCC00A6A179 /* I13_Home.swift in Sources */,
 				F62D52A6293E382E00C608A4 /* I6_AppViewModel.swift in Sources */,
+				F651F34C2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift in Sources */,
 				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D876F2940692200F6018E /* I7_Home.swift in Sources */,
 				F62D5291293747A700C608A4 /* I4_Home.swift in Sources */,
@@ -976,6 +1014,19 @@
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F651F3452A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F651F3462A3615AF00B6B3D3 /* I14_Todo.xcdatamodel */,
+			);
+			currentVersion = F651F3462A3615AF00B6B3D3 /* I14_Todo.xcdatamodel */;
+			path = I14_Todo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F62D523F2935ACAA00C608A4 /* Project object */;
 }

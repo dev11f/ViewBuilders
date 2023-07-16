@@ -13,6 +13,11 @@ final class ItemsProvider {
   private init() { }
   
   let items: [ItemData] = [
+    .init(id: 15,
+          title: "Infinite Page",
+          desc: "TabView를 이용해서 Infinite Page",
+          createdDate: "2023-07-16",
+          view: I15_Home()),
     .init(id: 14,
           title: "Todo List (Core Data)",
           desc: "Core Data를 이용한 투두 리스트 구현",

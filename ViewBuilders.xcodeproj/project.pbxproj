@@ -56,6 +56,10 @@
 		F6DF98A32942F9F6007A0C3C /* I9_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A22942F9F6007A0C3C /* I9_Home.swift */; };
 		F6DF98A62942FBF3007A0C3C /* I9_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */; };
 		F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF98A72942FC48007A0C3C /* I9_TagView.swift */; };
+		F6FC5A6B2A63CC7100BFCAD2 /* I15_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A6A2A63CC7100BFCAD2 /* I15_Home.swift */; };
+		F6FC5A6E2A63CC9E00BFCAD2 /* I15_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A6D2A63CC9E00BFCAD2 /* I15_Page.swift */; };
+		F6FC5A722A63CF7A00BFCAD2 /* I15_OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A712A63CF7A00BFCAD2 /* I15_OffsetReader.swift */; };
+		F6FC5A742A63D2FD00BFCAD2 /* I15_PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A732A63D2FD00BFCAD2 /* I15_PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,11 @@
 		F6DF98A52942FBF3007A0C3C /* I9_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_Tag.swift; sourceTree = "<group>"; };
 		F6DF98A72942FC48007A0C3C /* I9_TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I9_TagView.swift; sourceTree = "<group>"; };
 		F6DF98A929430912007A0C3C /* I9_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I9_README.md; sourceTree = "<group>"; };
+		F6FC5A6A2A63CC7100BFCAD2 /* I15_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I15_Home.swift; sourceTree = "<group>"; };
+		F6FC5A6D2A63CC9E00BFCAD2 /* I15_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I15_Page.swift; sourceTree = "<group>"; };
+		F6FC5A712A63CF7A00BFCAD2 /* I15_OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I15_OffsetReader.swift; sourceTree = "<group>"; };
+		F6FC5A732A63D2FD00BFCAD2 /* I15_PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I15_PageControl.swift; sourceTree = "<group>"; };
+		F6FC5A752A63D43000BFCAD2 /* I15_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = I15_README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				F62D527C2935D54C00C608A4 /* ItemsProvider.swift */,
+				F6FC5A692A63CC5700BFCAD2 /* I15_InfinitePage */,
 				F651F3442A3614B900B6B3D3 /* I14_TodoList */,
 				F6BBEE242A0F5FAE00A6A179 /* I13_HighlightView */,
 				F6BD3574299B6C6100A6237B /* I12_Popovers */,
@@ -488,6 +498,42 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F6FC5A692A63CC5700BFCAD2 /* I15_InfinitePage */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC5A752A63D43000BFCAD2 /* I15_README.md */,
+				F6FC5A702A63CF7000BFCAD2 /* Helpers */,
+				F6FC5A6C2A63CC9000BFCAD2 /* Models */,
+				F6FC5A6F2A63CCD500BFCAD2 /* Views */,
+			);
+			path = I15_InfinitePage;
+			sourceTree = "<group>";
+		};
+		F6FC5A6C2A63CC9000BFCAD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC5A6D2A63CC9E00BFCAD2 /* I15_Page.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6FC5A6F2A63CCD500BFCAD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC5A6A2A63CC7100BFCAD2 /* I15_Home.swift */,
+				F6FC5A732A63D2FD00BFCAD2 /* I15_PageControl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6FC5A702A63CF7000BFCAD2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC5A712A63CF7A00BFCAD2 /* I15_OffsetReader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,10 +690,12 @@
 				F62D52A1293E2B4800C608A4 /* I6_LineGraph.swift in Sources */,
 				F62D52872935EE4700C608A4 /* I2_DateValue.swift in Sources */,
 				F62D527F2935DED700C608A4 /* ContentView.swift in Sources */,
+				F6FC5A6E2A63CC9E00BFCAD2 /* I15_Page.swift in Sources */,
 				F651F3472A3615AF00B6B3D3 /* I14_Todo.xcdatamodeld in Sources */,
 				F62D52772935B05800C608A4 /* I1_Home.swift in Sources */,
 				F6DF98A82942FC48007A0C3C /* I9_TagView.swift in Sources */,
 				F62D87742940821000F6018E /* I8_Home.swift in Sources */,
+				F6FC5A742A63D2FD00BFCAD2 /* I15_PageControl.swift in Sources */,
 				F6BBEE2A2A0F61D600A6A179 /* I13_Highlight.swift in Sources */,
 				F6BD3577299B6C9800A6237B /* I12_Home.swift in Sources */,
 				F62D5296293DB88B00C608A4 /* I5_Album.swift in Sources */,
@@ -658,7 +706,9 @@
 				F651F34C2A36188900B6B3D3 /* I14_CustomFilteringDataView.swift in Sources */,
 				F62D52822935E8D700C608A4 /* I2_Home.swift in Sources */,
 				F62D876F2940692200F6018E /* I7_Home.swift in Sources */,
+				F6FC5A6B2A63CC7100BFCAD2 /* I15_Home.swift in Sources */,
 				F62D5291293747A700C608A4 /* I4_Home.swift in Sources */,
+				F6FC5A722A63CF7A00BFCAD2 /* I15_OffsetReader.swift in Sources */,
 				F626A3FD2972F22600D539FE /* I11_AddTaskView.swift in Sources */,
 				F62EB1B929499D9C00B21D98 /* I10_Home.swift in Sources */,
 				F62D527D2935D54C00C608A4 /* ItemsProvider.swift in Sources */,
